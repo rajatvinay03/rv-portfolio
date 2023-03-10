@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajat_Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="images/png" href="images/logo.png">
+    <script src="https://kit.fontawesome.com/8752649b20.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li ><a href="#header">Home</a></li>
+                    <li ><a href="#about">About</a></li>
+                    <li ><a href="#services">Services</a></li>
+                    <li ><a href="#portfolio">Portfolio</a></li>
+                    <li ><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text" data-aos="zoom-in">
+                <h1>Hi, I'm Rajat Vinay</h1>
+                <p>I am into <span class="auto-typed"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------about------------------- -->
+    <div id="about">
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/phone-background.jpg" alt="">
+                </div>
+                <div class="about-col-2" data-aos="zoom-in">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hello Everyone!! I'm an undergrad from TIU, Kolkata, who is passionate towards the field of science and technology from a tender age. I have a good amount of experience in the field of Front-End Development(website) and I am currenly striving hard to become a full fledged Web Developer. I am always curious about learning new technologies and exploring new things. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Creating, managing and testing web apps</li>
+                            <li><span>Social Media Marketing</span><br>Managing/Promoting Brands socially</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>React Development Intern</span><br>Developed web applications on React and Firebase, for Newton School .
+                               <br> Used Cypress framework for writing unit tests, thereby decreasing rework by 35% .
+                                <br> Got hands on experience of creating and managing JIRA tickets .</li>
+                            <li><span>Social Media Marketing Intern</span><br>Runs errands to make strong profiles .
+                                <br> Assists with setting up and managing a blog/post .
+                               <br> Ensures the managing/promotion of a social launch</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br>B.Tech(CSE) from TIU Kolkata <br>8.95/10 current CGPA</li>
+                            <li><span>2010-2020</span><br>Computer Science from Rajendra Vidyalaya <br> 81.25% in XII <br>95% in X</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------services----------------- -->
+
+    <div id="services">
+        <div class="container" data-aos="flip-up">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list" >
+                <div>
+                    <i class="fa-brands fa-uikit"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UX design is all about identifying and solving user problems; UI design is all about creating intuitive, aesthetically-pleasing, interactive interfaces. UX design usually comes first in the product development process, followed by UI.</p>
+                    <a href="https://flatironschool.com/blog/what-is-ux-ui-design/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_development">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-hashtag"></i>
+                    <h2>Social Media Marketing</h2>
+                    <p>Social media marketing (SMM) is the use of social media—the platforms on which users build social networks and share information—to build a company's brand, increase sales, and drive website traffic.</p>
+                    <a href="https://www.digitalmarketing.org/blog/what-is-social-media-marketing">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------portfolio--------------------- -->
+
+    <div id="portfolio">
+        <div class="container" data-aos="flip-up">
+            <h1 class="sub-title" >My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpg">
+                    <div class="layer">
+                        <h3>Resume Builder</h3>
+                        <p>A Web app for building online downloadable resumes easily</p>
+                        <a href="https://resume0987654321.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>G-SAW(Government Schemes Aiding Website)</h3>
+                        <p>Software for facilitation of various Govt. schemes for persons with disabilities</p>
+                        <a href="https://docs.google.com/presentation/d/1rjyYs2LTS5i_RY0OdlItLEYT46UhNHNh/edit?usp=sharing"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.jpg">
+                    <div class="layer">
+                        <h3>ShoeBox</h3>
+                        <p>An e-commerce platform where people can buy a variety of premium shoes</p>
+                        <a href="https://main--benevolent-gelato-ba9e27.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.github.com/rajatvinay03" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -----------------------contact--------------------- -->
+
+    <div id="contact">
+        <div class="container" data-aos="zoom-in">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> rajatvinay03@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91-6203231772</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/rajat.vinay03"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://wa.me/+916203231772/ "><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/rajatvinay03/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/rajat.vinay03/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1qECZ4MwNByy1jGFTQO6lTg29I8jMewNx/view?usp=share_link" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <h2>RAJAT VINAY</h2>
+            <p>Made with Love. Hope you liked it. Please share your views by contacting me.</p>
+            <p>Copyright © Rajat Vinay. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <!-- ----------------------script----------------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var typed = new Typed(".auto-typed",{
+            strings: ["Web Development","UI/UX Designing","Freelancing"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        })
+    </script>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx2wEsm_-5RbVHJc6VWjvDDeOAsvkdIRJxmkP0Nr2_eZr7DeSr8m8N5fvuaJ2F9miOo/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset:100,
+        delay: 50,
+        duration: 1000,
+        mirror: true,
+        once: false,
+    });
+  </script> 
+
+</body>
+</html>
